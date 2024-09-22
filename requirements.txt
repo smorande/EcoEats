@@ -1,0 +1,6 @@
+streamlit
+openai
+pandas
+altair
+python-dotenv
+bcrypt
