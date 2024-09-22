@@ -4,3 +4,6 @@ pandas
 altair
 python-dotenv
 bcrypt
+pydub
+soundfile
+gTTS
