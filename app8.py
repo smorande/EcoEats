@@ -484,7 +484,7 @@ def login_page():
     password = st.text_input("Password", type="password")
     
     if st.button("Login"):
-        if username == "smorande" and password == "krystal3Z":
+        if username == "kanwal" and password == "swapnil":
             st.session_state.user_id = 1  # Assigning a default user ID
             st.session_state.username = username
             st.success("Login successful!")
