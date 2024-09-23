@@ -1,3 +1,6 @@
+# Important: Pin the OpenAI library to version 0.28
+# Install using: pip install openai==0.28
+
 import streamlit as st
 import openai
 import pandas as pd
@@ -290,20 +293,20 @@ def login_page():
     password = st.text_input("Password", type="password")
     
     if st.button("Login"):
-        if username == "kanwal" and password == "swapnil87":
+        if username == "smorande" and password == "krystal3Z":
             # For demonstration purposes, we're using a hardcoded user ID.
             # In a real application, you'd retrieve this from the database.
             st.session_state.user_id = 1
             st.session_state.username = username
             st.success("Logged in successfully!")
-            st.rerun()
+            st.experimental_rerun()
         else:
             st.error("Invalid username or password")
 
     st.markdown("---")
     st.info("For demo purposes, use the following credentials:")
-    st.info("Username: kanwal")
-    st.info("Password: swapnil87")
+    st.info("Username: smorande")
+    st.info("Password: krystal3Z")
 
 def main():
     st.set_page_config(page_title="EcoEats Tracker", page_icon="🌿", layout="wide")
@@ -351,7 +354,7 @@ def main():
         if st.sidebar.button("Logout"):
             del st.session_state.user_id
             del st.session_state.username
-            st.rerun()
+            st.experimental_rerun()
         
         # Main content
         st.title("🌿 EcoEats: Food Waste Reduction & Healthy Eating Tracker")
