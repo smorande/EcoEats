@@ -10,7 +10,7 @@ import openai
 # Load environment variables
 load_dotenv()
 
-# Set up OpenAI API key
+# Make sure you've set your API key
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Database setup
@@ -37,7 +37,7 @@ def setup_database():
 
 setup_database()
 
-# AI Utility Functions
+# AI Utility Function
 @st.cache_data(show_spinner=False)
 def generate_ai_response(prompt, max_tokens=150):
     try:
@@ -49,10 +49,10 @@ def generate_ai_response(prompt, max_tokens=150):
             ],
             max_tokens=max_tokens
         )
-        return response.choices[0].message['content'].strip()
+        return response.choices[0].message.content.strip()
     except Exception as e:
         st.error(f"Error in AI response generation: {str(e)}")
-        return "I'm sorry, I couldn't generate a response at this time."
+        return "I'm sorry, I couldn't generate a response at this time."    
 
 # Gamification Functions
 def update_streak():
