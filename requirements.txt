@@ -9,3 +9,4 @@ soundfile
 gTTS
 matplotlib
 reportlab
+plotly
