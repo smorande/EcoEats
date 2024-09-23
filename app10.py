@@ -351,7 +351,7 @@ def main():
         if st.sidebar.button("Logout"):
             del st.session_state.user_id
             del st.session_state.username
-            st.experimental_rerun()
+            st.rerun()
         
         # Main content
         st.title("🌿 EcoEats: Food Waste Reduction & Healthy Eating Tracker")
