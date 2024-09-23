@@ -7,3 +7,4 @@ bcrypt
 pydub
 soundfile
 gTTS
+matplotlib
