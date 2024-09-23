@@ -303,8 +303,8 @@ def login_page():
 
     st.markdown("---")
     st.info("For demo purposes, use the following credentials:")
-    st.info("Username: smorande")
-    st.info("Password: krystal3Z")
+    st.info("Username: kanwal")
+    st.info("Password: swapnil87")
 
 def main():
     st.set_page_config(page_title="EcoEats Tracker", page_icon="🌿", layout="wide")
