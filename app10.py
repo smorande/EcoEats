@@ -299,7 +299,7 @@ def login_page():
             st.session_state.user_id = 1
             st.session_state.username = username
             st.success("Logged in successfully!")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Invalid username or password")
 
@@ -354,7 +354,7 @@ def main():
         if st.sidebar.button("Logout"):
             del st.session_state.user_id
             del st.session_state.username
-            st.experimental_rerun()
+            st.rerun()
         
         # Main content
         st.title("🌿 EcoEats: Food Waste Reduction & Healthy Eating Tracker")
