@@ -10,3 +10,16 @@ gTTS
 matplotlib
 reportlab
 plotly
+streamlit
+pandas
+altair
+python-dotenv
+openai
+Pillow
+matplotlib
+seaborn
+fpdf
+tweepy
+facebook-sdk
+SQLAlchemy
+requests
